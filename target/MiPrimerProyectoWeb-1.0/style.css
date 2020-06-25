@@ -1,0 +1,79 @@
+/*Para la imagen de fondo de la Pagina*/
+/*CSS se denomina como: Propiedad, dos puntos y valor*/
+body{ /*Se le conoce como Selector*/
+    background: url(fondo_negro.jpg) #CCC no-repeat; /*Tomamos imagen de fondo de mismo Netbeans, para que no se repita*/
+    background-size: cover; /*Para que cubra todo*/
+    background-position: center center; /*La posicion quede orientada al centro de la imagen*/
+    background-attachment: fixed; /*Imagen fija*/
+    
+    /*Para hacerlo compatible con cualquier navegador*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+}
+
+/*Para el Titulo principal que dice: Bienvenidos*/
+h2{
+    font-size: 3em; /*Tamaño de fuente - 16px=1em */
+    color: #fff; /*El color en este caso es blanco - este viene de gama de colores que usa HTML*/
+}
+
+/*Desarrollamos la clase centrado que habiamos creado en index.html por lo tanto esto modificara todo lo que abarque ese
+    <div> que establecimos en index.html*/
+.centrado{
+    margin: 0%; /*-- Establece el margen para los 4 lados, es para evitar tener que establecer cada lado por separado con 
+                  las otras propiedades de margen como: margin-top, margin-rigth, margin-bottom, margin-left*/
+   /* margin-left: 0%;*/
+    padding: 0; /*se utilizan para generar espacio alrededor del contenido de un elemento, dentro de cualquier borde 
+                    definido*/
+    text-align: center; /*Establece la alineacion del texto para diferentes elementos */
+    
+    position: absolute; /*Especifica el tipo de método de posicionamiento utilizado para un elemento.
+                        -position: static -- no está posicionado de ninguna manera especial,siempre se posiciona 
+                            de acuerdo con el flujo normal de la página.
+                        -position: relative -- Establecer las propiedades superior, derecha, inferior e izquierda 
+                        de un elemento relativamente posicionado hará que se ajuste fuera de su posición normal.
+                        -position: fixed -- se posiciona en relación con la ventana gráfica, lo que significa que 
+                        siempre permanece en el mismo lugar, incluso si se desplaza la página.
+                        -position: absolute -- se posiciona en relación con el ancestro posicionado más cercano 
+                        (en lugar de posicionado en relación con la ventana gráfica, como fijo)*/
+    
+    top: 0%; /*Establece el borde superior del elemento*/                          
+    left: 38%; /*Establece el borde izquierdo de un elemento <div> posicionado a 150 px desde el borde izquierdo 
+                de su ancestro posicionado más cercano */
+    transform: translateX(0%) translateY(0%); /*Rotar, sesgar y escalar tres elementos*/
+}
+
+/*Clase para la funcion del Boton*/
+.boton{
+    text-align: center; /*Alinear el texto*/
+    border: 2px solid white; /*Permiten especificar el estilo, el ancho y el color del borde de un elemento*/
+    padding: 10px 10px;
+    color: blue;
+    text-decoration: underline; /*Establece diferentes decoraciones de texto: overline, line-through, underline,underline overline*/
+    font-size: 15px;
+}
+
+/*Es para orientar la posicion de la tabla */
+#tabla{ /*Estilo IDE, usando un atributo IDE */
+     margin: 0%;
+     padding: 0;
+     text-align: center;
+     position: absolute;
+     top: 30%;
+     left: 36%;
+}
+
+/* Boton enviar */
+#enviar{
+    margin: 0%;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 46%;
+    width: 7em;  
+    height: 2em;
+    font-weight:bold;
+}
+

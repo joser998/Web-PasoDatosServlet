@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <!--En HTML5 la codificación por defecto si no se especifica nada es UTF-8 No obstante, es el navegador el que finalmente decide la codificación a utilizar -->
+        <title>Login</title> <!--Titulo de la pagina, esta se muestra en la pestaña del navegador-->
+        <link rel="stylesheet" href="style.css"> <!--Es para cargar el CSS, style.css va a ser nuestro archivo css-->
+    </head>
+    <body>
+        <div class="centrado"> <!--Creamos una capa -->
+            <h2>Gym Jose Luis</h2>    
+        
+            <div>
+            <a class="boton" href="https://www.instagram.com/luisra_998/" target="_blank">
+                Instagram</a>    
+            </div>
+            
+            <br>
+            <br>
+            
+        </div>    
+        
+        
+        <!-- Tabla para etiquetas usuario y contraseña y cajas de texto respectivas-->
+        <form name="form1" action="/MiPrimerProyectoWeb/Login" method="post" >  
+            
+        <table id="tabla" border="0" cellpadding="0" cellspacing="0" width="15%">
+            <tr>
+            <td width="10%"> <p style="color: white">Usuario:</p></td>
+            <td width="10%"><input type="text" size="25" name="usuario" value=""></td>
+            </tr>
+                
+            <tr>
+            <td width="10%"> <p style="color: white">Contraseña:</p></td>
+            <td width="10%"><input type="password" size="25" name="password" value=""></td>
+            </tr>
+        </table> 
+        
+        
+        <input id="enviar" type="submit" value="Enviar" style="color: black" />
+        </form>
+        
+    </body>
+</html>
